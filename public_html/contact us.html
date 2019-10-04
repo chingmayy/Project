@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"> 
+        
+         <style> 
+           
+
+            container
+            {
+                margin-top: 100px;
+                margin-bottom:70px; 
+               
+            }
+            
+          
+            .card
+            {
+                margin-top:50px;
+                border-radius:10px;
+               
+            }
+           
+            h2
+            {
+                margin:10px;
+                padding:10px;
+            }
+            
+         
+            .row
+            {
+                margin-top: 10px;
+                padding:20px;
+               
+            }
+            
+            .text-center
+            {
+                font:50px Lato,sans serif;
+            }
+            
+           .navbar 
+            {
+                text-align:center;
+                width: 100%;
+            }
+            .navbar ul {
+                display:inline-block;
+            }
+            .navbar li {
+                float:left;
+            }
+            .navbar li + li {
+                margin-left:20px;
+            }
+            .navbar li a, .navbar .navbar-brand
+            { 
+                color: darkblue;
+            }
+
+            .navbar-nav li a:hover 
+            {
+                 color:black;
+            }
+
+            .navbar-nav li.active a 
+            {
+                color:black;
+            }
+
+            .navbar-default .navbar-toggle 
+            {  
+                border-color: transparent;
+            }
+            
+            form{
+                width:1200px;
+            }
+            
+            .controls
+            {
+               padding-left: 450px;
+                
+            }
+            
+        </style> 
+       
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-white static-top justify-content-center">
+            <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.jpg" alt="logo" style="width:60px;">
+                </a>
+                
+                <ul class="navbar-nav ml-auto">
+                     
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    
+                     <li class="nav-item dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <a class="drop-item" href="#">Cats</a>
+                            <a class="drop-item" href="#">Dogs</a>
+                        </div>
+                     </li>
+                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        
+        <form id="contact-form" method="post" action="contact.php" role="form">
+
+            <div class="messages"></div>
+
+            <div class="controls">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name">First Name*</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder=" Enter firstname " required="required" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname">Last Name*</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter  lastname " required="required" data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email">Email*</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter email " required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_need">Please specify your need*</label>
+                            <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                <option value=""></option>
+                                <option value="Request quotation">Request services</option>
+                                <option value="Request order status">Request order status</option>
+                                
+                                <option value="Other">Other</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Message</label>
+                            <textarea id="form_message" name="message" class="form-control"  rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    </div>
+                </div>
+               
+            </div>
+
+</form>
+            
+                
+    </body>
+</html>
+

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        .navbar 
+            {
+                text-align:center;
+                width: 100%;
+            }
+            .navbar ul {
+                display:inline-block;
+            }
+            .navbar li {
+                float:left;
+            }
+            .navbar li + li {
+                margin-left:20px;
+            }
+            .navbar li a, .navbar .navbar-brand
+            { 
+                color: darkblue;
+            }
+
+            .navbar-nav li a:hover 
+            {
+                 color:black;
+            }
+
+            .navbar-nav li.active a 
+            {
+                color:black;
+            }
+
+            .navbar-default .navbar-toggle 
+            {  
+                border-color: transparent;
+            }
+            
+          
+            .container
+            {
+                padding:15px;
+                
+            }
+            
+            footer
+            {
+                background-color:#DCDCDC;
+            }
+            
+            
+           
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-white static-top justify-content-center">
+            <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.jpg" alt="logo" style="width:60px;">
+                </a>
+                
+                <ul class="navbar-nav ml-auto">
+                     
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Shop</a>
+                    </li>
+                    
+                     <li class="nav-item dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <a class="drop-item" href="#">Cats</a>
+                            <a class="drop-item" href="#">Dogs</a>
+                        </div>
+                     </li>
+                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        
+        
+       
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="card bg-light mb-3">
+                        <div class="card-header bg-dark text-white text-uppercase"><i class="fa fa-list"></i> Categories</div>
+                        <ul class="list-group category_block">
+                            <li class="list-group-item">Dry Food</li>
+                            <li class="list-group-item">Can Food</li>
+                            <li class="list-group-item">Snack</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img class="card-img-top" src="p2.jpg" >
+                                <div class="card-body">
+                                    <h4 class="card-title">Frisky Cat Food 10kg</h4>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>RM45</p>
+                                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img class="card-img-top" src="p3.jpg" >
+                                <div class="card-body">
+                                    <h4 class="card-title">Cindy Naturelle Salmon 1.5kg</h4>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>RM42.90</p>
+                                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img class="card-img-top" src="p1.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Meow Mix Chicken Flavor</h4> 
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>RM45</p>
+                                            <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+
+            </div>
+    </div>
+        <footer class="page-footer font-small pt-4">
+
+          <!-- Footer Links -->
+          <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-md-4 mt-md-0 mt-3">
+
+                <!-- Content -->
+                <h5 class="text-uppercase">Paws</h5>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <h6>Our mission is provide high<br>
+                    quality services and products<br>
+                    to benefit your pets.</h6> 
+               
+              </div>
+              <!-- Grid column -->
+
+              <hr class="clearfix w-100 d-md-none pb-3">
+
+              <!-- Grid column -->
+              <div class="col-md-2 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h6 class="text-uppercase">Paws</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              
+                <ul class="list-unstyled">
+                  <li>
+                    <a>About Us</a>
+                  </li>
+                  
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h6 class="text-uppercase">Customer Services</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                <ul class="list-unstyled">
+                  <li>
+                    <a>FAQ</a>
+                  </li>
+                  <li>
+                    <a>Terms and Condition</a>
+                  </li>
+                  
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-2 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h6 class="text-uppercase">Contact</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                
+                <h6>info@email.com</h6>
+                
+                <h6>+ 01 234 567 88</h6>
+
+             </div>
+            <!-- Grid row -->
+            <div class="col-md-2 mb-md-0 mb-3">
+                <h6 class="text-uppercase">Connect</h6>
+                
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <h6>Email promotions, news, and information</h6>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label 
+                            class="sr-only" 
+                            for="inputEmail"
+                        >Email</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="inputEmail"
+                            placeholder="address@example.com"
+                        >
+                     </div>
+                    <button type="submit" class="btn btn-default">Subscribe</button>
+                </form>
+            </div>
+
+
+          </div>
+          <!-- Footer Links -->
+
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">© 2019 Copyright
+            <a href="#"> Paws.com</a>
+          </div>
+          <!-- Copyright -->
+
+        </footer>
+
+    </body>
+</html>
