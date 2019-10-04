@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+<style>
+    
+        body,html
+        {
+                margin: 0;
+                padding: 0;
+		height: 100%;
+               
+	}
+        .navbar 
+            {
+                text-align:center;
+                width: 100%;
+            }
+            .navbar ul {
+                display:inline-block;
+            }
+            .navbar li {
+                float:left;
+            }
+            .navbar li + li {
+                margin-left:20px;
+            }
+            .navbar li a, .navbar .navbar-brand
+            { 
+                color: darkblue;
+            }
+
+            .navbar-nav li a:hover 
+            {
+                 color:black;
+            }
+
+            .navbar-nav li.active a 
+            {
+                color:black;
+            }
+
+            .navbar-default .navbar-toggle 
+            {  
+                border-color: transparent;
+            }
+            
+             
+           
+            .Content 
+            { 
+                display: flex; 
+                justify-content: center; 
+                align-items: center;
+                margin-bottom: 35px;
+                margin-top: 10px;
+            } 
+
+            form{
+                width:400px; 
+                justify-content: center; 
+                align-items: center; 
+                border: 3px solid #f1f1f1; 
+                padding:2rem; 
+                background:#ffffff; 
+                margin-top:20px;;
+            }
+
+
+            .form-control
+            {
+                font-size: 14px;
+                font-family:Arial, Helvetica, sans-serif;
+                width:320px;
+            }
+
+            .form-header 
+
+            { 
+                text-align:center; 
+                margin-bottom:2rem; 
+            }
+
+            .form-button 
+            { 
+                height:100%; 
+                width:100%; 
+                display:flex; 
+                align-items:center; 
+                justify-content:center; 
+                margin-bottom:1rem; 
+            } 
+
+            .button:hover  
+
+            { 
+                background-color: #69c8e7; 
+                opacity:0.8; 
+
+            } 
+
+            .button 
+            { 
+                 background-color: #69d2e7; 
+                 border: 1px solid #ddd; 
+                 color: #ffffff;
+                 padding:10px;
+
+            }
+
+            .error {
+                color: red;
+                font-size: 90%;
+            }
+
+            .row {
+                padding-bottom: 10px;
+                width:320px;
+            }
+
+</style>
+
+
+   
+<body>
+    <nav class="navbar navbar-expand-lg bg-white static-top justify-content-center">
+            <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.jpg" alt="logo" style="width:60px;">
+                </a>
+                
+                <ul class="navbar-nav ml-auto">
+                     
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    
+                     <li class="nav-item dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <a class="drop-item" href="#">Cats</a>
+                            <a class="drop-item" href="#">Dogs</a>
+                        </div>
+                     </li>
+                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <div class="Content">
+            <form name="myform" method="post" onsubmit="return validateForm()">
+                <div class ="form-header">
+
+                    <h2> Sign Up</h2>
+                    <p>Please Fill In The Form</p>
+
+                </div> 
+
+                <div class="form-group"> <!-- Full Name -->
+                        <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Enter Name">
+                        <div class="error" id="nameErr"></div>
+                </div>
+
+                <div class="form-group"> <!-- password -->
+                        
+                        <input type="text" class="form-control" id="password_id" name="password" placeholder="Enter Password">
+                        <div class="error" id="passwordErr"></div>
+                </div>	
+
+                <div class="form-group"> <!-- confirm pw -->
+                     
+                        <input type="text" class="form-control" id="confirm_pw_id" name="confirm" placeholder="Confirm Password">
+                        <div class="error" id="confirmErr"></div>
+                </div>
+
+                <div class="form-group"> <!--contact num-->
+                       
+                        <input type="text" class="form-control" id="contact_num_id" name="contact" placeholder="Contact Number">
+                        <div class="error" id="mobileErr"></div>
+                </div>	
+
+                <div class="form-group"> <!-- Street 1 -->
+                        
+                        <input type="text" class="form-control" id="address1_id" name="address" placeholder="Enter Address">
+                        <div class="error" id="addressErr"></div>
+                </div>
+                
+                <div class="form-group"> <!-- Street 2 -->
+                        
+                        <input type="text" class="form-control" id="address2_id" name="address2" placeholder="Enter Address">
+                        <div class="error" id="address2Err"></div>
+                </div>
+
+                <div class="agree"> 
+                        <input type="checkbox" name="agree" id="agree"> 
+                        <label for="agree">I accept the <a href="#">Terms of Use & Privacy Policy</a></label> 
+                </div> 
+
+                <div class="form-button"> <!-- Submit Button -->
+                        <button class="button" id="submit" >Sign Up</button>
+                </div>
+            </form>	
+        </div>
+</body>           
+
+</html>
+
+
