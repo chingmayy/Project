@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 Dec 2019, 9:37:39 PM
+    Author     : User
+*/
+
+        body,html 
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Varela Round", sans-serif;
+    background: white;    
+}
+
+.navbar 
+{
+    text-align:center;
+    width: 100%;
+}
+
+.navbar ul 
+{
+    display:inline-block;
+}
+
+.navbar li 
+{
+    float:left;
+}
+            
+.navbar li + li 
+{
+    margin-left:20px;
+
+}
+
+.navbar li a, .navbar .navbar-brand
+{  
+    color: darkblue;
+}
+
+.navbar-nav li a:hover 
+{
+    color:black;
+}
+
+.navbar-nav li.active a 
+{
+    color:black;
+}            
+
+.navbar-default .navbar-toggle 
+{ 
+    border-color: transparent;
+}
+
+footer
+{
+    background-color:#DCDCDC;
+}   
+    
+
+
+.btn-block
+{
+    background-color:#FF8927;
+    color:white;
+    font-size:18px;
+    font-weight: bold;
+}
+
+.align-middle {
+    font-size:18px;
+
+}

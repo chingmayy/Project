@@ -1,0 +1,200 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Nov 2019, 12:20:03 PM
+    Author     : User
+*/
+
+            body,html 
+            {
+                margin: 0;
+                padding: 0;
+		height: 100%;
+                font-family: "Varela Round", sans-serif;
+            }
+            
+            .navbar 
+            {
+                text-align:center;
+                width: 100%;
+            }
+            .navbar ul {
+                display:inline-block;
+            }
+            .navbar li {
+                float:left;
+            }
+            .navbar li + li {
+                margin-left:20px;
+            }
+            .navbar li a, .navbar .navbar-brand
+            { 
+                color: darkblue;
+            }
+
+            .navbar-nav li a:hover 
+            {
+                 color:black;
+            }
+
+            .navbar-nav li.active a 
+            {
+                color:black;
+            }
+
+            .navbar-default .navbar-toggle 
+            {  
+                border-color: transparent;
+            }
+            
+            footer
+            {
+                background-color:#DCDCDC;
+            }
+            
+            
+            .section{
+                width:100%;
+                margin-left:-15px;
+                padding:2px;padding-left:15px;
+                padding-right:15px;
+                background:#f8f9f9;
+            }
+           
+            .input-group
+            {
+                width:150px;
+            }
+
+            .img-big-wrap
+            {
+                margin:80px;
+            }
+
+            .review
+            {
+                margin:15px;
+            }
+
+            .checked {
+              color: gold;
+            }
+          
+            .product_rassurance {
+                padding: 10px;
+                margin-top: 50px;
+                background: #ffffff;
+                border: 1px solid #6c757d;
+                color: #6c757d;
+            }
+            .product_rassurance .list-inline {
+                margin-bottom: 0;
+                text-transform: uppercase;
+                text-align: center;
+               
+            }
+            .product_rassurance .list-inline li:hover {
+                color: #343a40;
+            }
+            
+         
+
+            .number-input {
+              margin-bottom: 3rem;
+            }
+
+            .number-input button {
+                
+                -webkit-appearance: none;
+                background: white;
+                border: none;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                margin: 0;
+            }
+
+            .number-input button:before,
+            .number-input button:after {
+              display: inline-block;
+              position: absolute;
+              content: '';
+              height: 2px;
+              transform: translate(-50%, -50%);
+            }
+
+            .number-input button.plus:after {
+              transform: translate(-50%, -50%) rotate(90deg);
+            }
+
+            .number-input input[type=number] {
+              text-align: center;
+            }
+
+            .number-input.number-input {
+              border: 1px solid #ced4da;
+              width: 10rem;
+              border-radius: .25rem;
+            }
+
+            .number-input.number-input button {
+              width: 2.6rem;
+              height:15px;
+            }
+
+            .number-input.number-input button.minus {
+              padding-left: 10px;
+            }
+
+            .number-input.number-input button:before,
+            .number-input.number-input button:after {
+              width: .7rem;
+              background-color: #495057;
+            }
+
+            .number-input.number-input input[type=number] {
+              max-width: 4rem;
+              padding: .5rem;
+              border: 1px solid #ced4da;
+              border-width: 0 1px;
+              font-size: 1rem;
+              height: 2rem;
+              color: #495057;
+            }
+
+     
+
+            .img-rounded {
+                height:50px;
+            }
+
+            .card-header {
+                background: #f8f9f9 ;
+
+            }
+            
+            h4
+            {
+                font-size: 20px;
+            }
+
+           
+
+            .fa-star {
+                height:9px; 
+                margin:5px 0;
+            }
+
+            .price-detail-wrap 
+            {
+               padding:2px;
+               font-size:33px;
+               color: #ED3B0F ;
+               
+            }
+            
+
+ 
